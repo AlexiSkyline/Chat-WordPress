@@ -1,4 +1,4 @@
-#Importación del plugin Chat Interview para Wordpress
+# Importación del plugin Chat Interview para Wordpress
 Este plugin permite agregar una funcionalidad de chat a tu sitio web de Wordpress.
 
 ## Requisitos
