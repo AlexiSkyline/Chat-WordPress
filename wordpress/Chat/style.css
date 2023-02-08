@@ -1,0 +1,26 @@
+/*
+Theme Name: Tema de la plantilla de https://www.programadornovato.com
+Theme URI: https://www.programadornovato.com
+Description: Esta es una descripcion del tema Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, recusandae, officia fuga labore dolor mollitia voluptate beatae magnam aliquam quaerat accusantium harum odit magni ut at aspernatur incidunt possimus obcaecati.
+Version: 1.0
+Author: Eugenio
+Author URI: 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: 
+*/
+
+body { margin: 0; padding-bottom: 3rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+
+#form { background: rgba(0, 0, 0, 0.15); padding: 0.25rem; position: fixed; bottom: 0; left: 0; right: 0; display: flex; height: 3rem; box-sizing: border-box; backdrop-filter: blur(10px); }
+#input { border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; }
+#input:focus { outline: none; }
+#form > button { background: rgb(53, 66, 167); border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 3px; outline: none; color: #fff; }
+#username { border: none; padding: 0 1rem; border-radius: 2rem; margin: 0.25rem; }
+#username-text { color: rgb(4, 37, 125); font-weight: bold; }
+#me-username-text { color: rgb(20, 134, 75); font-weight: bold; }
+
+#messages { list-style-type: none; margin: 0; padding: 0; }
+#messages > li { padding: 0.5rem 1rem; }
+#messages > li:nth-child(odd) { background: #efefef; }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interview</title>
+    <style>
+      body { margin: 0; padding-bottom: 3rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+
+      #form { background: rgba(0, 0, 0, 0.15); padding: 0.25rem; position: fixed; bottom: 0; left: 0; right: 0; display: flex; height: 3rem; box-sizing: border-box; backdrop-filter: blur(10px); }
+      #input { border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; }
+      #input:focus { outline: none; }
+      #form > button { background: rgb(53, 66, 167); border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 3px; outline: none; color: #fff; }
+      #username { border: none; padding: 0 1rem; border-radius: 2rem; margin: 0.25rem; }
+      #username-text { color: rgb(4, 37, 125); font-weight: bold; }
+      #me-username-text { color: rgb(20, 134, 75); font-weight: bold; }
+
+      #messages { list-style-type: none; margin: 0; padding: 0; }
+      #messages > li { padding: 0.5rem 1rem; }
+      #messages > li:nth-child(odd) { background: #efefef; }
+    </style>
+  </head>
+  <body>
+    <ul id="messages"></ul>
+    <form id="form" action="">
+      <input id="username" placeholder="Username" autocomplete="off" />
+      <input id="input" placeholder="Mensaje" autocomplete="off"/><button>Enviar</button>
+    </form>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      var socket = io();
+
+      var messages = document.getElementById('messages');
+      var form = document.getElementById('form');
+      var input = document.getElementById('input');
+      var usernameInput = document.getElementById('username');
+      
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        if (input.value && usernameInput.value) {
+          socket.emit('chat message', {
+            username: usernameInput.value,
+            message: input.value
+          });
+          input.value = '';
+        } else {
+          window.alert("Ingrese el nombre de usuario");
+        }
+      });
+      
+      socket.on('chat message', function(msg) {
+        var item = document.createElement('li');
+        item.innerHTML = `<span id="${ verifyUsername(msg.username) }">${ msg.username }</span>: ${ msg.message }`;
+        messages.appendChild(item);
+        window.scrollTo(0, document.body.scrollHeight);
+      });
+
+      const verifyUsername = (username) => {
+          return username === usernameInput.value ? "me-username-text" : "username-text"
+      }
+    </script>
+  </body>
+</html>
