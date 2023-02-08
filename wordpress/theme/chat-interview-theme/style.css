@@ -1,14 +1,14 @@
 /*
-Theme Name: Tema de la plantilla de https://www.programadornovato.com
-Theme URI: https://www.programadornovato.com
-Description: Esta es una descripcion del tema Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, recusandae, officia fuga labore dolor mollitia voluptate beatae magnam aliquam quaerat accusantium harum odit magni ut at aspernatur incidunt possimus obcaecati.
-Version: 1.0
-Author: Eugenio
-Author URI: 
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: 
-Text Domain: 
+    Theme Name: Chat Interview Plugin
+    Theme URI: https://github.com/AlexiSkyline
+    Description: Este Theme es una prueba para crear una página de chat en Wordpress.
+    Version: 1.0
+    Author: AlexiSkyline
+    Author URI: https://github.com/AlexiSkyline
+    License: GNU General Public License v2 or later
+    License URI: 
+    Tags: chat
+    Text Domain: 
 */
 
 body { margin: 0; padding-bottom: 3rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
