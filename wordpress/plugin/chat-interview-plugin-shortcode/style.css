@@ -1,0 +1,64 @@
+#container {
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	height: 400px;
+	background-color: #f2f2f2;
+	border: 1px solid #797777;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#messages {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+	padding: 20px;
+	font-size: 14px;
+	list-style: none;
+}
+
+#form {
+	display: flex;
+	gap: 10px;
+	padding: 10px;
+	background-color: #fff;
+	border-top: 1px solid #797777;
+}
+
+input {
+	padding: 0 5px;
+	font-size: 12px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+#username {
+	width: 100px;
+}
+
+#input_message {
+	width: 100%;
+}
+
+#form > button {
+	background: rgb(53, 66, 167);
+	border: none;
+	border-radius: 3px;
+	outline: none;
+	padding: 5px 10px;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+#username-text {
+	color: rgb(4, 37, 125); font-weight: bold;
+}
+
+#me-username-text {
+	color: rgb(20, 134, 75); font-weight: bold;
+}

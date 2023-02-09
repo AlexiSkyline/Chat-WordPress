@@ -7,7 +7,7 @@ Este tema para Wordpress es una implementación de un chat utilizando la tecnolo
 ## Instalación
 Sigue estos pasos para instalar el tema en tu sitio web de Wordpress:
 
-1. Descarga o clona este repositorio en tu equipo local.
+1. Descarga la carpeta chat-interview-theme.
 2. Comprime la carpeta en un archivo .zip.
 3. Accede a tu panel de administración de Wordpress.
 4. Haz clic en "Apariencia" y luego en "Temas".
